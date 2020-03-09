@@ -1,0 +1,50 @@
+.instructors-wrapper
+    display: flex
+    justify-content: center
+    margin-bottom: 100px
+    width: 100%
+    flex-direction: column
+    align-items: center
+    @media (min-width: 1000px)
+        margin-bottom: 255px
+.instructor
+    text-align: center
+    margin-bottom: 40px
+
+.instrictor__photo
+    margin-bottom: 15px
+    max-width: 291px
+    
+.instrictor__name
+    color: #000000
+    font-family: "Playfair Display", serif
+    font-size: 24px
+    font-weight: 400
+    letter-spacing: 0.28px
+    margin-bottom: 15px
+    @media (min-width: 620px)
+        font-size: 30px
+
+.instrictor__students
+    color: #2ab738
+    font-size: 15px
+    font-weight: 500
+    letter-spacing: 0.14px
+
+
+@media (min-width: 620px)
+    .instructors-wrapper
+        flex-wrap: wrap
+        width: 100%
+        justify-content: center
+        flex-direction: row
+    .instructor
+        padding-left: 10px
+        padding-right: 10px
+    .instrictor__photo
+        margin-bottom: 30px
+@media (min-width: 960px)
+    .instructors-wrapper
+        justify-content: space-between
+    .instructor
+        margin-bottom: 0

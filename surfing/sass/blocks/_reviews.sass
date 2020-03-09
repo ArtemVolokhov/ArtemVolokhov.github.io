@@ -1,0 +1,76 @@
+.reviews
+    width: 100%
+    margin-right: 20px
+    order: 1
+    padding-left: 20px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+.reviews__title
+    color: #000000
+    font-family: 'Playfair Display', serif
+    font-size: 36px
+    font-weight: 400
+    letter-spacing: 0.29px
+    margin-bottom: 35px
+    text-align: center
+    width: 100%
+    margin-top: 40px
+    @media (min-width: 1280px)
+        margin-top: 0
+.reviews-item
+    margin-bottom: 25px
+    border-bottom: 1px solid #e7e7e7
+    padding-bottom: 15px
+    position: relative
+    max-width: 260px
+    margin-right: 20px
+    &::before
+        content: ""
+        display: block
+        width: 36px
+        height: 29px
+        position: absolute
+        top: 0
+        left: -18px
+        z-index: -1
+        background-image: url("../img/icons/quote.svg")
+        background-repeat: no-repeat
+        background-position: center
+    &:last-child
+        margin-right: 0
+
+.reviews-item__text
+    color: #999999
+    font-size: 16px
+    font-weight: 400
+    line-height: 1.9
+    font-style: italic
+    margin-bottom: 10px
+
+.reviews-item__author
+    color: #000000
+    font-size: 16px
+    font-weight: 700
+    line-height: 31px
+    margin-bottom: 0
+    &::before
+        content: "-   "
+@media (min-width: 620px)
+    .reviews-item
+        text-align: center
+    .reviews-item
+        margin-right: 50px
+@media (min-width: 1280px)
+    .reviews
+        order: 0
+        margin-right: 20px
+        width: 260px
+        flex-wrap: auto
+        text-align: left
+    .reviews__title
+        text-align: left
+        font-size: 29px
+    .reviews-item
+        text-align: left
+        margin-right: 0

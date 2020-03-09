@@ -1,0 +1,103 @@
+.video
+    width: 100%
+    max-width: 280px
+    display: flex
+    line-height: 0
+    flex-direction: column
+    align-items: center
+    
+.video__title
+    color: #000000
+    font-family: 'Playfair Display', serif
+    font-size: 36px
+    font-weight: 400
+    letter-spacing: 0.29px
+    margin-bottom: 35px
+    text-align: center
+    margin-top: 60px
+    @media (min-width: 1280px)
+        margin-top: 0
+.video-item
+    width: 100%
+    margin-bottom: 36px
+    position: relative
+    overflow: hidden
+
+.play-icon
+    width: 50px
+    height: 50px
+    background-color: #fff
+    border-radius: 50px
+    position: relative
+    &::before
+        position: absolute
+        left: 50%
+        top: 50%
+        margin-left: -4px
+        margin-top: -5px
+        content: ""
+        display: block
+        width: 0
+        height: 0
+        border-top: 5.5px solid transparent
+        border-left: 8px solid black
+        border-bottom: 5.5px solid transparent
+.video-item .play-icon
+    position: absolute
+    left: -10px
+    bottom: -15px
+.video-centre
+    position: relative
+    order: -1
+    margin-bottom: 30px
+    margin: 0 -20px
+    
+.video-centre .play-icon
+    position: absolute
+    left: 24px
+    bottom: 32px
+.video img
+    height: auto
+    width: 100%
+    min-width: 300px
+.video-centre img
+    height: auto
+    width: 100%
+    min-width: 300px
+
+
+@media (min-width: 620px)
+    .video__title
+        width: 100%
+        margin-bottom: 50px
+    .video-centre
+        order: 0
+    .video
+        display: flex
+        flex-direction: row
+        width: 100%
+        max-width: none
+        flex-wrap: wrap
+        justify-content: center
+    .video-item
+        width: auto
+        margin-right: 20px
+    .video-item
+        &:last-child
+            margin-right: 0
+@media (min-width: 1280px)
+    .video 
+        flex-direction: column
+        flex-wrap: no-wrap
+        width: 300px
+        padding-right: 20px
+    .video-centre
+        margin-bottom: 0
+        max-width: 620px
+
+    .video__title
+        text-align: left
+        width: auto
+    .video-item
+        &:last-child
+            margin-right: auto

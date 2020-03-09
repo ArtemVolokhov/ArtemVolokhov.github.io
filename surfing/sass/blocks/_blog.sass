@@ -1,0 +1,59 @@
+.blog-item
+    display: flex
+    justify-content: space-between
+    margin-bottom: 90px
+    flex-direction: column
+    align-items: center
+    padding-right: 15px
+    padding-left: 15px
+    
+    @media (min-width: 1000px)
+        flex-direction: row
+        padding: 0
+        margin-bottom: 190px
+        &:nth-child(odd)
+            flex-direction: row-reverse
+        &:last-child
+            margin-bottom: 250px
+.blog-item__image img
+    width: 100%
+.blog-item-content
+    max-width: 450px
+.blog-item__header
+    color: #000000
+    font-size: 24px
+    letter-spacing: 0.33px
+    font-family: 'Playfair Display', serif
+    font-style: italic
+    margin-bottom: 25px
+    @media (min-width: 620px)
+        font-size: 40px
+.blog-item__desc
+    color: #444444
+    font-size: 16px
+    font-weight: 400
+    line-height: 1.9
+    letter-spacing: 0.06px
+    margin-bottom: 20px
+    @media (min-width: 1000px)
+        margin-bottom: 50px
+.blog-item__readmore
+    display: block
+    margin: 0 auto
+    width: 140px
+    border: 1px solid #e5e5e5
+    padding: 16px 30px 20px 30px
+    line-height: 1
+    color: #000000
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.06px
+    text-decoration: none
+    transition: all 0.2s ease-in
+    &:hover,&:active
+        text-decoration: none
+        background-color: black
+        color: white
+    @media (min-width: 1000px)
+        width: auto
+        display: inline-block

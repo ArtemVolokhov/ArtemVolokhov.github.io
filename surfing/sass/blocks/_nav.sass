@@ -1,0 +1,130 @@
+.nav-wrapper
+    // box-sizing: border-box
+    padding-top: 30px
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+    display: flex
+    justify-content: space-between
+    margin-bottom: 80px
+    padding-left: 20px
+    padding-right: 20px
+    
+.nav
+    
+nav a
+    text-decoration: none;
+
+.nav__item
+    color: #aaaaaa
+    font-size: 15px
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 0.3px
+    
+    transition: all 0.2s ease-in
+   
+
+
+.icon //бургер
+    display: block
+    width: 30px
+    height: 4px
+    background-color: black
+    position: relative
+    margin-top: 10px
+    &::before
+        content: ''
+        top: -8px
+        display: block
+        position: absolute
+        width: 30px
+        height: 4px
+        background-color: black
+    &::after
+        display: block
+        position: absolute
+        width: 30px
+        height: 4px
+        background-color: black
+        content: ''
+        top: 8px
+.topnav .nav__item
+    display: none
+
+.responsive .nav__item
+    display: block
+    color: black
+    // margin-top: 40px
+    text-align: center
+    margin-right: 0
+    &:first-child
+        margin-top: 20px
+    &:nth-last-child(-n+2)
+        margin-bottom: 20px
+    &:hover, &:active
+        background-color: black
+        color: white
+        
+.responsive
+    position: absolute
+    background-color: #aaaaaa
+    color: black
+    right: 60px
+    width: 50%
+    text-align: center
+    @media (min-width: 620px)
+        position: relative
+ 
+.responsive a
+    padding-top: 20px
+    padding-bottom: 20px
+.responsive a.icon
+    padding-top: 0
+    padding-bottom: 0
+.responsive .icon
+    position: absolute
+    top: 0
+    right: -40px
+    &:hover, &:active
+        padding: 0
+       
+   
+@media (min-width: 620px)
+    .nav-wrapper
+        justify-content: space-between
+        padding-top: 50px
+        align-items: baseline
+        display: flex
+    .topnav
+        display: flex  
+        
+    .topnav .nav__item
+        display: inline-block
+    .topnav .icon
+        display: none
+    .nav__item
+        color: #aaaaaa
+        
+        font-size: 15px
+        font-weight: 500
+        text-transform: uppercase
+        letter-spacing: 0.3px
+        margin-right: 70px
+        transition: all 0.2s ease-in
+        &:last-child
+            margin-right: 0
+        &--active,
+        &:hover, &:focus, &:active
+            color: #111111
+            font-weight: 600       
+    
+@media (min-width: 1280px)
+    .nav-wrapper
+        max-width: 1440px
+        padding-left: 0
+        padding-top: 92px
+        margin-bottom: 80px
+
+
+//----------------------------------------------Menu
