@@ -5,7 +5,7 @@ ul, li {
 }
 
 body {
-  font-family: 'Open Sans Semibold';
+  font-family: "Open Sans Light";
 }
 
 .button {
@@ -66,13 +66,49 @@ body {
   color: white;
   background-size: cover;
   background-position: 0 100%;
+  font-family: 'Open Sans Semibold';
 }
 
 .header__title {
   font-size: 55px;
+  letter-spacing: 3px;
 }
 
 .header__text {
   font-size: 20px;
   margin-bottom: 100px;
+}
+
+.about {
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 125px;
+}
+
+.about__title {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-family: 'Open Sans Bold';
+  margin-bottom: 25px;
+}
+
+.about__icon {
+  font-size: 60px;
+}
+
+.about__text {
+  font-size: 15px;
+  margin-bottom: 110px;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  color: #212121;
+}
+
+.about__h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: 'Open Sans Semibold';
 }
