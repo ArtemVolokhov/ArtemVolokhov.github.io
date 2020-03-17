@@ -14,29 +14,16 @@ body {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-family: roboto;
+  font-family: Roboto;
+  font-weight: 700;
   text-transform: uppercase;
-}
-
-.button_empty {
-  background: transparent;
-  border: 2px solid white;
-}
-
-.button_empty:hover {
-  border: 2px solid white;
-  background-color: #04574e;
-  cursor: pointer;
-}
-
-.button_full {
-  background-color: #00897b;
+  background: #00897b;
   border: 2px solid #00897b;
 }
 
-.button_full:hover {
+.button:hover {
+  background: transparent;
   border: 2px solid white;
-  background-color: #04574e;
   cursor: pointer;
 }
 
@@ -61,7 +48,7 @@ body {
   color: #868686;
 }
 
-.header > div {
+.header {
   background-image: url(../img/Header.png);
   padding: 180px 0;
   text-align: center;
@@ -180,4 +167,28 @@ body {
 
 .button-services:hover {
   cursor: pointer;
+}
+
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 135px;
+  text-align: center;
+}
+
+.portfolio button {
+  font-family: "Open Sans Semibold";
+}
+
+.portfolio button:hover {
+  color: black;
+  border: 2px solid #00897b;
+  background: transparent;
+}
+
+.portfolio img {
+  margin-bottom: 30px;
+}
+
+.filter {
+  padding: 120px 0;
 }
