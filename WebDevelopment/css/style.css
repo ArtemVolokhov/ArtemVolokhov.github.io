@@ -26,6 +26,7 @@ body {
 .button_empty:hover {
   border: 2px solid white;
   background-color: #04574e;
+  cursor: pointer;
 }
 
 .button_full {
@@ -36,6 +37,7 @@ body {
 .button_full:hover {
   border: 2px solid white;
   background-color: #04574e;
+  cursor: pointer;
 }
 
 .menu-bar {
@@ -100,10 +102,13 @@ body {
 
 .about__text {
   font-size: 15px;
-  margin-bottom: 110px;
   line-height: 22px;
   letter-spacing: 0.75px;
   color: #212121;
+}
+
+.about__desc {
+  margin-bottom: 110px;
 }
 
 .about__h3 {
@@ -111,4 +116,68 @@ body {
   margin-bottom: 20px;
   font-size: 20px;
   font-family: 'Open Sans Semibold';
+}
+
+.services {
+  background-color: #e4fdf9;
+  padding-top: 165px;
+  padding-bottom: 125px;
+  color: black;
+  text-align: center;
+}
+
+.our_card__desc {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  margin-bottom: 45px;
+}
+
+.our_card {
+  background-color: white;
+  padding: 50px 25px 40px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-bottom: 30px;
+}
+
+.our_card:hover {
+  background-color: #00897b;
+  color: white !important;
+  -webkit-box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+
+.our_card:hover .icon {
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.our_card:hover .button-services {
+  border: 2px solid white;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.icon {
+  font-size: 60px;
+  color: black;
+}
+
+.service__desc {
+  margin-bottom: 115px;
+}
+
+.button-services {
+  text-transform: uppercase;
+  border: 2px solid black;
+  background: transparent;
+  padding: 10px 12px 10px;
+  font-family: 'Open Sans Semibold';
+}
+
+.button-services:hover {
+  cursor: pointer;
 }
