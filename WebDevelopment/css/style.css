@@ -27,6 +27,14 @@ body {
   cursor: pointer;
 }
 
+.focused {
+  background: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+  color: black;
+  border: 1px solid black;
+}
+
 .menu-bar {
   color: #212121;
   padding: 20px 0;
@@ -175,6 +183,10 @@ body {
   text-align: center;
 }
 
+.portfolio .filter {
+  min-height: 640px;
+}
+
 .portfolio button {
   font-family: "Open Sans Semibold";
 }
@@ -191,4 +203,26 @@ body {
 
 .filter {
   padding: 120px 0;
+}
+
+.text {
+  display: none;
+}
+
+div[filter]:hover img {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+div[filter]:hover .text {
+  display: block;
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: 3;
+  text-align: center;
 }
