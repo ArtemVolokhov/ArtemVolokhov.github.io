@@ -1,0 +1,46 @@
+.left > div:first-child 
+    order: 1
+.left > div:last-child
+    order: 2
+.right
+    & > div:first-child
+        order: 2
+    & > div:last-child
+        order: 1
+.blog
+    text-align: left
+    margin-top: 60px
+    margin-left: 20px
+    div 
+        margin-top: 15px
+        margin-bottom: 20px
+    a
+        font-size: 25px
+        color: #00897b
+        font-family: 'Open Sans Semibold'
+    span
+        font-size: 17px
+        font-family: 'Open Sans Semibold'
+        margin-right: 35px
+    i 
+        margin-right: 15px
+    p
+        font-size: 15px
+.left, .right
+    margin: 0 -40px
+.blog__button
+    width: 220px
+    height: 70px
+    text-transform: uppercase
+    color: white
+    font-size: 20px
+    margin-top: 125px
+    border: none
+    background: #00897b
+    transition: .3s
+    font-family: 'Open Sans Bold'
+    letter-spacing: 1px
+    &:hover
+        color: black
+        background: transparent 
+        border: 2px solid #00897b
