@@ -424,6 +424,10 @@ div[filter]:hover .text {
           order: 1;
 }
 
+.blog__header {
+  margin-bottom: 125px;
+}
+
 .blog {
   text-align: left;
   margin-top: 60px;
@@ -455,6 +459,10 @@ div[filter]:hover .text {
   font-size: 15px;
 }
 
+.blog__header-title {
+  margin-bottom: 30px;
+}
+
 .left, .right {
   margin: 0 -40px;
 }
@@ -478,4 +486,87 @@ div[filter]:hover .text {
   color: black;
   background: transparent;
   border: 2px solid #00897b;
+}
+
+.footer {
+  padding-top: 165px;
+  padding-bottom: 125px;
+  color: white;
+  text-align: center;
+  background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer input, .footer textarea {
+  padding: 30px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+.footer input:focus, .footer textarea:focus {
+  outline: none;
+}
+
+.footer textarea {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+.footer__text {
+  color: white;
+}
+
+.fa-map-marker-alt, .fa-phone, .fa-envelope {
+  font-size: 62px;
+  color: white;
+}
+
+.circle {
+  background: #3949ab;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 35px;
+}
+
+.circle + p {
+  font-size: 20px;
+}
+
+.form {
+  margin-top: 70px;
+}
+
+.footer__button {
+  font-size: 20px;
+  font-family: 'Open Sans Bold';
+  text-transform: uppercase;
+  color: #212121;
+  padding: 20px 77px;
+  border-radius: 10px;
+  -webkit-transform-style: .3s;
+          transform-style: .3s;
+}
+
+.footer__button:hover {
+  background-color: #3949ab;
+  color: white;
+}
+
+.rules {
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Open Sans Semibold';
 }
