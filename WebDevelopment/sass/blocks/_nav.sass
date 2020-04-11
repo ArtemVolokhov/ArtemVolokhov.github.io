@@ -2,7 +2,12 @@
     color: #212121 
     padding: 20px 0
     background-color: #fff
+    display: flex
+.menu-icon
+    display: none    
 
+.logo
+    width: 180px
 .menu__item 
     margin-left: 37px
 
@@ -13,3 +18,23 @@
         &:hover
             text-decoration: none
             color: #868686
+@media screen and ( max-width: 768px )
+    .logo-bar
+        display: flex
+        justify-content: space-between
+        align-items: center
+@media screen and ( max-width: 1200px )
+    nav
+        display: none
+    .logo-bar
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .menu-icon
+        display: block
+        background: #00897b
+        border: none
+        font-size: 25px
+        width: 50px
+        height: 50px   
+        cursor: pointer

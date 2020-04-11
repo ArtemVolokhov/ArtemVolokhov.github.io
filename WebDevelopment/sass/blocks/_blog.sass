@@ -1,3 +1,5 @@
+.section-blog
+    padding: 0 40px
 .left > div:first-child 
     order: 1
 .left > div:last-child
@@ -9,10 +11,11 @@
         order: 1
 .blog__header
     margin-bottom: 125px
+.blog-item
+    width: 48%
 .blog
     text-align: left
     margin-top: 60px
-    margin-left: 20px
     div 
         margin-top: 15px
         margin-bottom: 20px
@@ -28,6 +31,7 @@
         margin-right: 15px
     p
         font-size: 15px
+    
 .blog__header-title
     margin-bottom: 30px
 .left, .right
@@ -39,6 +43,7 @@
     color: white
     font-size: 20px
     margin-top: 125px
+    margin-bottom: 30px
     border: none
     background: #00897b
     transition: .3s
@@ -48,3 +53,25 @@
         color: black
         background: transparent 
         border: 2px solid #00897b
+@media screen and ( max-width: 480px )
+    .blog
+        margin-top: 20px
+    .blog__header
+        margin-bottom: 25px
+    .left, .right
+        flex-direction: column
+    .blog-item, .blog
+        width: 100%
+    .right>div:first-child
+        order: 1
+    .right>div:last-child
+        order: 2
+    .blog i
+        margin-right: 5px
+    .blog span
+        margin-right: 15px
+    .blog__button
+        margin-top: 30px
+        width: 135px
+        height: 35px
+        font-size: 15px

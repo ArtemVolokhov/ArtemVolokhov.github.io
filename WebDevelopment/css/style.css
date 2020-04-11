@@ -8,6 +8,24 @@ body {
   font-family: "Open Sans Light";
 }
 
+#toTop {
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+  background: #00897b;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  color: black;
+}
+
 .button {
   padding: 10px 25px;
   margin: 0 10px;
@@ -39,6 +57,17 @@ body {
   color: #212121;
   padding: 20px 0;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.logo {
+  width: 180px;
 }
 
 .menu__item {
@@ -54,6 +83,46 @@ body {
 .menu__item a:hover {
   text-decoration: none;
   color: #868686;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    display: none;
+  }
+  .logo-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-icon {
+    display: block;
+    background: #00897b;
+    border: none;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
 }
 
 .header {
@@ -76,6 +145,21 @@ body {
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 20px;
+  }
+  .header__title {
+    font-size: 35px;
+  }
+  .header__text {
+    margin-bottom: 20px;
+  }
+  .header .button {
+    margin-bottom: 10px;
+  }
+}
+
 .about {
   background-color: #fff;
   color: black;
@@ -89,6 +173,7 @@ body {
   letter-spacing: 1.5px;
   font-family: 'Open Sans Bold';
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .about__icon {
@@ -111,6 +196,15 @@ body {
   margin-bottom: 20px;
   font-size: 20px;
   font-family: 'Open Sans Semibold';
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    padding: 20px;
+  }
+  .about__text {
+    margin-bottom: 20px;
+  }
 }
 
 .services {
@@ -177,6 +271,15 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 480px) {
+  .services {
+    padding: 20px;
+  }
+  .service__desc {
+    margin-bottom: 30px;
+  }
+}
+
 .portfolio {
   padding-top: 120px;
   padding-bottom: 135px;
@@ -199,6 +302,7 @@ body {
 
 .portfolio img {
   margin-bottom: 30px;
+  max-width: 100%;
 }
 
 .filter {
@@ -227,6 +331,18 @@ div[filter]:hover .text {
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+  .portfolio {
+    padding: 20px;
+  }
+  .portfolio .button {
+    margin-bottom: 10px;
+  }
+  .filter {
+    padding: 20px;
+  }
+}
+
 .pricing {
   padding-top: 165px;
   padding-bottom: 125px;
@@ -239,6 +355,7 @@ div[filter]:hover .text {
   background-color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin-bottom: 20px;
 }
 
 .price:hover {
@@ -305,6 +422,12 @@ div[filter]:hover .text {
   border: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 480px) {
+  .pricing {
+    padding: 20px;
+  }
 }
 
 .team {
@@ -400,6 +523,29 @@ div[filter]:hover .text {
   background: #3949ab;
 }
 
+@media screen and (max-width: 480px) {
+  .team {
+    padding: 20px 0;
+  }
+  .team .about__text {
+    margin-bottom: 20px;
+  }
+  .team img {
+    max-width: 300px;
+    padding: 0 5px;
+  }
+  .multiple-items {
+    margin-top: 10px;
+  }
+  .dots-style {
+    margin-top: 10px;
+  }
+}
+
+.section-blog {
+  padding: 0 40px;
+}
+
 .left > div:first-child {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -428,10 +574,13 @@ div[filter]:hover .text {
   margin-bottom: 125px;
 }
 
+.blog-item {
+  width: 48%;
+}
+
 .blog {
   text-align: left;
   margin-top: 60px;
-  margin-left: 20px;
 }
 
 .blog div {
@@ -474,6 +623,7 @@ div[filter]:hover .text {
   color: white;
   font-size: 20px;
   margin-top: 125px;
+  margin-bottom: 30px;
   border: none;
   background: #00897b;
   -webkit-transition: .3s;
@@ -486,6 +636,46 @@ div[filter]:hover .text {
   color: black;
   background: transparent;
   border: 2px solid #00897b;
+}
+
+@media screen and (max-width: 480px) {
+  .blog {
+    margin-top: 20px;
+  }
+  .blog__header {
+    margin-bottom: 25px;
+  }
+  .left, .right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-item, .blog {
+    width: 100%;
+  }
+  .right > div:first-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .right > div:last-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .blog i {
+    margin-right: 5px;
+  }
+  .blog span {
+    margin-right: 15px;
+  }
+  .blog__button {
+    margin-top: 30px;
+    width: 135px;
+    height: 35px;
+    font-size: 15px;
+  }
 }
 
 .footer {
@@ -569,4 +759,24 @@ div[filter]:hover .text {
   padding: 20px 0;
   text-align: center;
   font-family: 'Open Sans Semibold';
+}
+
+@media screen and (max-width: 1024px) {
+  .footer input, .footer textarea {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 20px;
+  }
+  .form {
+    margin-top: 20px;
+  }
+  .footer__button {
+    font-size: 15px;
+    padding: 10px 30px;
+  }
 }
