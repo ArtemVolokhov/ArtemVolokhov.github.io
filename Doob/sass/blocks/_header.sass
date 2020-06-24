@@ -1,0 +1,242 @@
+.header
+    min-height: 1020px
+    padding-top: 55px
+    background-image: url('../img/Bg. Shape.png')
+    background-repeat: no-repeat
+    background-position:  right 20px
+    margin-bottom: 100px
+    &__wrapper  
+        flex-grow: 1
+        max-width: 1150px
+.container__header
+    
+.row    
+    display: flex
+    justify-content: flex-start
+    max-width: 1470px
+    margin: 0 auto
+    padding: 0 10px
+
+    
+.header__logo img
+    
+    
+    
+.header__logo 
+    margin-left: 10px
+    margin-right: 75px
+    padding-top: 15px
+    flex-grow: 0
+.header__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    padding-bottom: 255px
+
+
+.nav__item
+    list-style: none
+    margin-right: 35px
+.main-nav__list
+    display: flex
+    max-width: 970px
+    flex-wrap: wrap
+    
+.nav__link
+    padding: 10px 
+    font-size: 18px
+    line-height: 20px  
+    &:hover
+        text-decoration: underline
+    &:first-child
+        padding-left: 0
+.nav__link-contact
+    display: none
+.contactus
+    display: block
+    color: #ff3946
+    border: 1px solid white
+    font-size: 18px
+    line-height: 20px
+    background-color: #fff
+    padding: 20px 70px 20px 20px
+    text-align: center
+    position: relative
+    border-radius: 3px
+    box-shadow: 0px 19px 32px -17px #515151
+    transition: all 0.2s
+    &:hover,&:active
+        box-shadow: none
+        background-color: #f0efef
+        .arrow
+            transition: .2s
+            transform: rotate(180deg)
+
+.arrow
+    position: absolute
+    top: 21px
+    right: 25px
+.hamburger-menu
+    display: none
+    position: absolute
+    top: 10px
+    left: 20px
+    height: 4rem
+    width: 4rem
+    background-color: #fff
+    border-radius: .4rem    
+    box-shadow: .5rem .5rem 1rem #cacaca,-.5rem -.5rem 1rem #fff
+    cursor: pointer
+    z-index: 9999
+    align-items: center
+    justify-content: center
+    &:hover
+        box-shadow: inset .5rem .5rem 1rem #f0efef, inset -.5rem -.5rem 1rem #fff
+    
+.bar
+    width: 2.5rem
+    height: 2px
+    background-color: #ff3946
+    display: inline-block
+    position: relative
+    transition: background-color .5s
+    &::before, &::after
+        content: ""
+        position: absolute
+        width: inherit
+        height: inherit
+        background-color: #ff3946
+        transition: all .5s
+    &::before
+        top: -.8rem
+    &::after
+        top: .8rem
+.open .bar
+    background-color: transparent
+    &::before
+        top: 0
+        transform: rotate(135deg)
+    &::after
+        top: 0
+        transform: rotate(-135deg)
+.about
+    &__row
+        max-width: 550px
+.main-title
+    font-size: 74px
+    line-height: 75px
+    @include semibold
+.about__title
+    margin-bottom: 45px
+.about__text
+    font-size: 18px
+    line-height: 30px
+    margin-bottom: 40px
+.about__button-red
+    margin-right: 40px
+@media screen and ( max-width: 1200px )
+    .about__row
+        max-width: 100%
+    .about__text
+        text-align: center
+        
+    .about__button-wrapper
+        text-align: center
+    .main-title
+        text-align: center
+    .contactus
+        margin-right: 20px
+@media screen and ( max-width: 900px )
+    .header__logo
+        margin-right: 20px
+        padding-top: 5px
+
+    .header
+        padding-top: 20px
+        
+    .contactus
+        border: 1px solid white
+        font-size: 16px
+        line-height: 18px
+        box-shadow: 0px 23px 41px -12px #515151
+        padding: 10px 53px 10px 10px
+    .arrow
+        top: 12px
+        right: 12px
+    .nav__link
+        font-size: 16px
+    .nav__item
+        margin-right: 5px
+    
+    .about__row
+        max-width: 100%
+    .about__text
+        text-align: center
+    .main-title
+        font-size: 60px
+        line-height: 70px
+    .header__inner
+        padding-bottom: 200px
+@media screen and ( max-width: 678px )
+    .hamburger-menu
+        display: flex
+    .header
+        min-height: 800px        
+        background-position: right -189px
+    .header__inner
+        justify-content: space-between
+    .header__logo
+        order: 2
+        margin: 0
+    .contactus
+        order: 3
+        margin-right: 15px
+    .main-nav__list
+        position: absolute
+        transform: translateX(-100%)
+        z-index: 1000
+    .open .main-nav__list
+        display: flex
+        flex-direction: column
+        height: 100vh
+        width: 50%
+        
+        top: 0
+        left: 0
+        background-color: #eeeeee
+        transform: translateX(0)
+        align-items: center
+        justify-content: space-around
+        box-shadow: -.5rem 0 1rem rgba(0,0,0,.1)
+        padding-top: 30px
+        transition: transform .5s
+    .open .nav__link
+        font-size: 20px
+        line-height: 22px
+    .nav__link-contact
+        display: inline-block
+    .contactus
+        display: none
+    .header__logo
+        margin-right: 50px
+@media screen and ( max-width: 537px )
+    .header
+        background-position:  center -189px
+    .open .main-nav__list
+        width: 100%
+    .about__button-inherit
+        display: block
+        margin: 0 auto
+        max-width: 220px
+    .about__button-red
+        display: block
+        margin: 0 auto
+        max-width: 220px
+        margin-bottom: 30px
+    .main-title
+        font-size: 50px
+        line-height: 60px
+        text-align: center
+    
+    
