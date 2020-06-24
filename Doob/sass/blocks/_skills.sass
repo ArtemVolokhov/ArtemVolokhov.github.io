@@ -1,16 +1,19 @@
 .skills__wrapper
     display: flex
-    justify-content: space-between
+    justify-content: space-around
 .skills__title
     margin-bottom: 40px
 
 .skill
     max-width: 320px
-    box-shadow: 0px 19px 32px -17px #515151
+    box-shadow: 0px 7px 34px -20px #515151
     padding: 40px
+    background: #fff
+
     
 .skills__column
     max-width: 351px
+    margin-right: 70px
 .skill__img
     margin-bottom: 35px
 
@@ -22,6 +25,29 @@
 .skill__text
     font-size: 14px
     line-height: 24px
-    
+.skill__wrapper
+    display: flex
+    justify-content: space-between
+    flex: 1
 @media screen and ( max-width: 1200px )
-  
+    .skills__wrapper
+        flex-direction: column
+        text-align: center
+    .skills__column
+        max-width: 100%
+        margin-bottom: 20px
+        margin-right: 0
+    .skill__wrapper
+        justify-content: space-around
+    .skills__button
+        max-width: 220px
+        margin: 0 auto
+        margin-top: 30px
+    .skills__title
+        margin-bottom: 20px
+@media screen and ( max-width: 678px )
+    .skill__wrapper
+        flex-direction: column
+        align-items: center
+    .skill
+        margin-bottom: 20px

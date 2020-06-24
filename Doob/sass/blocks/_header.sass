@@ -147,6 +147,8 @@
         text-align: center
     .contactus
         margin-right: 20px
+    .header
+        margin-bottom: 20px
 @media screen and ( max-width: 900px )
     .header__logo
         margin-right: 20px
@@ -184,6 +186,7 @@
     .header
         min-height: 800px        
         background-position: right -189px
+        margin-bottom: 30px
     .header__inner
         justify-content: space-between
     .header__logo
@@ -196,12 +199,14 @@
         position: absolute
         transform: translateX(-100%)
         z-index: 1000
+    .open .hamburger-menu
+        position: fixed
     .open .main-nav__list
         display: flex
         flex-direction: column
         height: 100vh
         width: 50%
-        
+        position: fixed
         top: 0
         left: 0
         background-color: #eeeeee
@@ -238,5 +243,7 @@
         font-size: 50px
         line-height: 60px
         text-align: center
+    .about
+        margin-bottom: 70px
     
     

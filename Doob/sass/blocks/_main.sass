@@ -6,6 +6,11 @@
 body
     @include regular
     color: black
+    background: white
+    background-image: url(../img/bg-2.png), url(../img/bg-3.png)
+    background-repeat: no-repeat, no-repeat
+    background-position: top 1100px left, top 1300px right
+
 a
     text-decoration: none
     @include semibold
@@ -37,4 +42,7 @@ a
     &:hover
         text-decoration: underline
         
-        
+@media screen and ( max-width: 678px )
+    .section-title 
+        font-size: 37px 
+        line-height: 45px
