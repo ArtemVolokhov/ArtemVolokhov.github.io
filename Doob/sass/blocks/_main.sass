@@ -1,7 +1,7 @@
 .container
-    max-width: 1170px
+    max-width: 1180px
     margin: 0 auto
-    padding: 0 10px
+    padding: 0 15px
     
 body
     @include regular
@@ -41,7 +41,13 @@ a
     transition: all 0.2s
     &:hover
         text-decoration: underline
-        
+.section-subtitle
+    font-size: 18px
+    line-height: 20px
+    color: #ff3946
+    text-transform: uppercase
+    @include semibold
+
 @media screen and ( max-width: 678px )
     .section-title 
         font-size: 37px 

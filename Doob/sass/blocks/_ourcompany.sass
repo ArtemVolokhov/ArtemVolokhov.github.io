@@ -1,0 +1,59 @@
+.ourcompany__img
+    max-width: 625px
+    margin-right: 130px
+.ourcompany__container
+    max-width: 1480px
+    margin: 0 auto
+    padding: 0 15px
+.ourcompany__wrapper
+    display: flex
+    justify-content: start
+    margin-bottom: 150px
+.ourcompany__subtitle
+    margin-bottom: 40px
+.company-slider__title
+    @include semibold
+    font-size: 48px
+    line-height: 60px
+    margin-bottom: 45px
+.ourcompany__column
+    max-width: 560px
+    margin-right: 10%
+    min-width: 0
+.ourcompany__arrows
+    margin-top: 50px
+@media screen and ( max-width: 1400px )
+    .ourcompany__column 
+        margin-right: 95px
+@media screen and ( max-width: 1250px )
+    .ourcompany__container
+        max-width: 1180px
+    .ourcompany__column
+        margin-right: 0px
+    .ourcompany__img
+        margin-right: 20px
+    .ourcompany__wrapper
+        display: flex
+        justify-content: space-between
+    .ourcompany__arrows 
+        margin-top: 25px
+    .company-slider__title
+        margin-bottom: 25px
+    .ourcompany__subtitle
+        margin-bottom: 20px
+@media screen and ( max-width: 678px )
+    .ourcompany__wrapper
+        flex-direction: column
+    .company-slider__title
+        font-size: 37px
+        line-height: 45px
+    .ourcompany__column
+        text-align: center
+    .ourcompany__subtitle
+        margin-top: 30px
+    .ourcompany__img
+        margin: 0
+    .ourcompany__arrows 
+        align-items: center
+    .arrows
+        margin: 15px auto 0

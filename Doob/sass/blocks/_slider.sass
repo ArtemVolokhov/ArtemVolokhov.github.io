@@ -1,0 +1,29 @@
+.slick-track
+    display: flex
+.slick-list
+    overflow: hidden
+.arrows
+    width: 70px
+    display: flex
+    align-items: center
+    justify-content: space-between
+.slider__arrow
+    background-image: url("../img/slider__arrow-left.svg")
+    background-repeat: no-repeat
+    width: 30px
+    height: 20px
+    background-color: transparent
+    border: none
+    display: block
+    padding: 0
+    transition: 0.5s
+    &:focus
+        outline: none
+.slick-disabled
+    background-image: url("../img/slider__arrow-left-disabled.svg")
+.slider__arrow-right
+    transform: scale(-1, 1)
+    filter: FlipH
+.company-slide__slide
+    &:focus
+        outline: none

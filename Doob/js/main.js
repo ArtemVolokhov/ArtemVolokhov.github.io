@@ -13,4 +13,9 @@ $(document).ready(function() {
             div.removeClass("open"); // скрываем его
         }
     });
+    $('.slider').slick({
+        prevArrow: $('.slider__arrow-left'),
+        nextArrow: $('.slider__arrow-right'),
+        infinite: false
+    });
 });
