@@ -376,6 +376,21 @@ a {
   }
   .header {
     margin-bottom: 20px;
+    background: none;
+    min-height: 900px;
+  }
+  .header::before {
+    content: "";
+    opacity: 0.6;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../img/Bg. Shape.png");
+    background-repeat: no-repeat;
+    background-position: right -100px;
   }
 }
 
@@ -428,8 +443,10 @@ a {
   }
   .header {
     min-height: 800px;
-    background-position: right -189px;
     margin-bottom: 30px;
+  }
+  .header::before {
+    background-position: right -189px;
   }
   .header__inner {
     -webkit-box-pack: justify;
@@ -502,7 +519,7 @@ a {
 }
 
 @media screen and (max-width: 537px) {
-  .header {
+  .header::before {
     background-position: center -189px;
   }
   .open .main-nav__list {

@@ -1,7 +1,7 @@
 .header
     min-height: 1020px
     padding-top: 55px
-    background-image: url('../img/Bg. Shape.png')
+    background-image:  url('../img/Bg. Shape.png')
     background-repeat: no-repeat
     background-position:  right 20px
     margin-bottom: 100px
@@ -149,6 +149,22 @@
         margin-right: 20px
     .header
         margin-bottom: 20px
+        background: none
+        min-height: 900px
+        &::before
+            content: ""
+            opacity: 0.6
+            position: absolute
+            z-index: -1
+            top: 0
+            left: 0
+            bottom: 0
+            right: 0
+            background: url('../img/Bg. Shape.png')
+ 
+            background-repeat: no-repeat
+            background-position:  right -100px
+
 @media screen and ( max-width: 900px )
     .header__logo
         margin-right: 20px
@@ -156,7 +172,7 @@
 
     .header
         padding-top: 20px
-        
+
     .contactus
         border: 1px solid white
         font-size: 16px
@@ -185,8 +201,10 @@
         display: flex
     .header
         min-height: 800px        
-        background-position: right -189px
+        
         margin-bottom: 30px
+        &::before
+            background-position: right -189px
     .header__inner
         justify-content: space-between
     .header__logo
@@ -227,7 +245,8 @@
         margin-right: 50px
 @media screen and ( max-width: 537px )
     .header
-        background-position:  center -189px
+        &::before
+            background-position:  center -189px
     .open .main-nav__list
         width: 100%
     .about__button-inherit
