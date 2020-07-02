@@ -14,8 +14,34 @@ $(document).ready(function() {
         }
     });
     $('.slider').slick({
-        prevArrow: $('.slider__arrow-left'),
-        nextArrow: $('.slider__arrow-right'),
+        prevArrow: $('.ourcompany__arrow-left'),
+        nextArrow: $('.ourcompany__arrow-right'),
         infinite: false
     });
+
+    $('.slider-gallery').slick({
+        slidesPerRow: 3,
+        rows: 2,
+        prevArrow: $('.portfolio__arrow-left'),
+        nextArrow: $('.portfolio__arrow-right'),
+        infinite: false,
+        responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesPerRow: 2,
+                    rows: 2
+                }
+            },
+            {
+                breakpoint: 780,
+                settings: {
+                    slidesPerRow: 1,
+                    rows: 2
+                }
+            }
+
+
+        ]
+    });
+
 });

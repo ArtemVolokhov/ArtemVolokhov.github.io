@@ -1,0 +1,65 @@
+.slider-gallery     
+    
+    min-width: 0
+    display: flex
+    .slick-slide div
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+    .slick-slide
+        &:focus
+            outline: none      
+.slider-gallery__image-wrapper
+    max-width: 370px
+    max-height: 280px
+    overflow: hidden
+    margin-bottom: 20px
+    margin-right: 20px
+    &:last-child
+        margin-right: 0
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        transition: .5s
+        &:hover
+            transform: scale(1.1)
+            cursor: pointer
+.slider-gallery_modal
+    display: none
+    
+    max-width: 80wh
+    position: fixed
+    top: 50%
+    right: 50%
+    z-index: 2000
+    transform: translate(50%, -50%)
+
+
+.slider-gallery__open-img
+
+
+
+.slider-gallery__arrow
+    background-color: white
+    position: absolute
+    top: 50%
+    left: 3%
+    width: 50px
+    height: 50px
+    display: block
+    border-radius: 50%
+.slider-gallery__arrow.slider__arrow_right
+        left: auto
+        right: 3%
+.slider-gallery__open-img
+    
+    img
+        width: 100%
+        height: auto
+        object-fit: fill
+@media screen and ( max-width: 1200px )
+    .slider-gallery     
+        .slick-slide div
+            justify-content: space-around
+        
