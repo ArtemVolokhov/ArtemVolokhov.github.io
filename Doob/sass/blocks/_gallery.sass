@@ -25,20 +25,6 @@
         &:hover
             transform: scale(1.1)
             cursor: pointer
-.slider-gallery_modal
-    display: none
-    
-    max-width: 80wh
-    position: fixed
-    top: 50%
-    right: 50%
-    z-index: 2000
-    transform: translate(50%, -50%)
-
-
-.slider-gallery__open-img
-
-
 
 .slider-gallery__arrow
     background-color: white
@@ -62,4 +48,10 @@
     .slider-gallery     
         .slick-slide div
             justify-content: space-around
+@media screen and ( max-width: 780px )
+    .portfolio__wrapper
+        .arrows
+            margin: 0 auto
         
+
+    

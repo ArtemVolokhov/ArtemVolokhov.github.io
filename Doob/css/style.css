@@ -84,12 +84,20 @@ a {
 
 .portfolio__section {
   margin-bottom: 150px;
+  margin-top: 150px;
 }
 
 @media screen and (max-width: 678px) {
   .section-title {
     font-size: 37px;
     line-height: 45px;
+  }
+  .portfolio__section {
+    margin-bottom: 75px;
+    margin-top: 75px;
+  }
+  .ourcompany__section {
+    margin-bottom: 75px;
   }
 }
 
@@ -104,7 +112,7 @@ a {
 }
 
 .arrows {
-  width: 70px;
+  width: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,11 +128,11 @@ a {
   background-image: url("../images/slider__arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 30px;
-  height: 20px;
+  display: block;
+  min-width: 55px;
+  min-height: 40px;
   background-color: transparent;
   border: none;
-  display: block;
   padding: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -742,6 +750,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 75px;
   }
   .company-slider__title {
     font-size: 37px;
@@ -773,10 +782,6 @@ a {
   padding-bottom: 150px;
 }
 
-.portfolio__section {
-  margin-top: 150px;
-}
-
 .portfolio__header-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -801,6 +806,24 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .portfolio__header-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .arrows {
+    margin-bottom: 45px;
+  }
+  .portfolio__title {
+    text-align: center;
+  }
+  .portfolio__title {
+    margin-bottom: 45px;
   }
 }
 
@@ -853,17 +876,6 @@ a {
   cursor: pointer;
 }
 
-.slider-gallery_modal {
-  display: none;
-  max-width: 80wh;
-  position: fixed;
-  top: 50%;
-  right: 50%;
-  z-index: 2000;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-}
-
 .slider-gallery__arrow {
   background-color: white;
   position: absolute;
@@ -891,5 +903,11 @@ a {
   .slider-gallery .slick-slide div {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .portfolio__wrapper .arrows {
+    margin: 0 auto;
   }
 }
