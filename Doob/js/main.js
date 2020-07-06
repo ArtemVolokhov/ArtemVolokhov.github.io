@@ -43,5 +43,27 @@ $(document).ready(function() {
 
         ]
     });
+    $('.news__slider').slick({
+        slidesToShow: 3,
+        prevArrow: $('.news__slider-arrow-left'),
+        nextArrow: $('.news__slider-arrow-right'),
+        slidesToScroll: 1,
+        responsive: [{
+                breakpoint: 850,
+                settings: {
+                    slidesToShow: 2
+
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+
+
+        ]
+    });
 
 });

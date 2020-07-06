@@ -2,10 +2,12 @@
     max-width: 1180px
     margin: 0 auto
     padding: 0 15px
-    
+    &--wide
+        max-width: 1200px
+        
 body
     @include regular
-    color: black
+    color: #314584
     background: white
     background-image: url(../images/bg-2.png), url(../images/bg-3.png)
     background-repeat: no-repeat, no-repeat
@@ -48,8 +50,14 @@ a
     text-transform: uppercase
     @include semibold
 .portfolio__section
-    margin-bottom: 150px
+
     margin-top: 150px
+.news__section
+    margin-bottom: 170px
+@media screen and ( max-width: 1000px )
+    .portfolio__section
+        margin-top: 0
+    
 @media screen and ( max-width: 678px )
     .section-title 
         font-size: 37px 

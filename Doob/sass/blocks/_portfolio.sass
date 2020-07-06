@@ -3,13 +3,26 @@
     background-repeat: no-repeat
     background-position:  left top
     padding-bottom: 150px
-
+    &__wrapper
+        text-align: center
+    
+.portfolio__slider
+    margin-bottom: 20px
 .portfolio__header-row
     display: flex
     justify-content: space-between
 .portfolio__title
     max-width: 450px
     margin-bottom: 80px
+
+.portfolio__seemore 
+    padding: 10px
+    color: #ff3946
+    @include semibold
+    
+    &:hover,&:focus
+        text-decoration: underline
+        
 @media screen and ( max-width: 1200px )
     .portfolio__header-row
         justify-content: start
@@ -24,3 +37,11 @@
         text-align: center
     .portfolio__title
         margin-bottom: 45px
+@media screen and ( max-width: 790px )
+    .portfolio__slider
+        margin-bottom: 0
+    .portfolio__seemore 
+        
+        margin: 20px auto 0
+        display: block
+        max-width: 400px
