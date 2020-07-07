@@ -1,0 +1,71 @@
+.footer
+    background-color: #314584
+
+    color: white
+    text-align: center
+    padding: 75px 0 50px
+footer a:visited
+    color: white
+.footer__company 
+    color: white
+    font-size: 18px
+    line-height: 20px
+    margin-bottom: 20px
+    padding: 10px
+    
+.footer__slogan 
+    text-transform: uppercase
+    color: #ff3946
+    font-size: 48px
+    line-height: 60px
+    margin-top: 20px
+    margin-bottom: 40px
+.footer__nav 
+    margin-bottom: 55px
+.footer__nav-list 
+    text-align: center
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.footer__nav-li-item 
+    margin-right: 35px
+    &:last-child
+        margin-right: 0
+.footer__nav-link 
+    padding: 10px
+    transition: .4s
+    &:hover
+        text-decoration: underline
+.footer__copyright 
+    margin-bottom: 45px
+.footer__social-list 
+    display: flex
+    justify-content: center
+
+.footer__social-item 
+    margin-right: 85px
+    &:last-child
+        margin-right: 0
+.footer__social-link 
+
+@media screen and ( max-width: 700px )
+    .footer
+        padding-top: 30px
+    .footer__slogan
+        font-size: 37px
+        line-height: 45px
+        margin-bottom: 30px
+    .footer__nav-list 
+        text-align: center
+        display: flex
+        justify-content: space-between
+    .footer__nav-li-item 
+        margin-right: 10px
+    .footer__nav 
+        margin-bottom: 30px
+
+@media screen and ( max-width: 500px )
+    .footer__nav-list
+        justify-content: center
+        text-align: center

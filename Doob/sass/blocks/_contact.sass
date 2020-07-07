@@ -1,0 +1,41 @@
+.contact__subtitle
+    margin-bottom: 30px
+.contact__title
+    margin-bottom: 50px
+.contact
+    
+    input, fieldset,textarea
+        border: none
+        @include semibold
+        bowrder-radius: 3px
+
+    input, textarea
+        background: #f4fafe
+        padding: 20px
+    &__textarea
+        width: 100%
+        min-height: 125px
+    &__email, &__subject
+        
+        width: 100% 
+        min-height: 60px
+        margin-bottom: 40px
+    &__email
+        margin-right: 40px
+    &__row
+        display: flex
+        justify-content: space-between
+    &__button
+        border: none
+        display: block
+        margin: 0 auto
+        margin-top: 60px
+@media screen and ( max-width: 1200px )
+    .contact
+        text-align: center
+@media screen and ( max-width: 678px )
+    .contact
+        &__row
+            flex-direction: column
+    &__email, &__subject
+        width: 100%
