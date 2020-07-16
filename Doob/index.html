@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
     <header class="header" id="header__link">
         <div class="row">
             <a href="#" class="header__logo"><img src="images/logo.png" alt=""></a>
@@ -41,7 +42,7 @@
                                 <li class="nav__item"><a href="#contact__link" class="nav__link nav__link-contact">Свяжитесь с нами.</a></li>
                             </ul>
                         </nav>
-                        <a href="#" class="contactus">Напишите нам<svg width="30px" class="arrow" height="19px">
+                        <a href="#" class="contactus js-open-modal" data-modal="1">Напишите нам<svg width="30px" class="arrow" height="19px">
                     <path  fill-rule="evenodd"  fill="rgb(255, 57, 70)"
                         d="M21.230,0.919 L19.816,2.334 L26.109,8.627 L0.885,8.627 L0.885,10.627 L25.820,10.627 L19.529,16.920 L20.943,18.335 L29.797,9.482 L21.230,0.919 Z"/>
                     </svg></a>
@@ -64,6 +65,7 @@
             </div>
         </div>
     </header>
+
     <section class="skills" id="skills__link">
         <div class="container">
             <div class="skills__wrapper">
@@ -278,6 +280,30 @@
             </ul>
         </div>
     </footer>
+    <sections class="popup">
+        <div class="contact contact__modal modal" data-modal='1'>
+
+
+            <h4 class="section-subtitle contact__subtitle">Свяжитесь с нами</h4>
+            <button class="close-btn js-modal-close"></button>
+
+            <form action="post">
+                <div class="contact__row">
+                    <label for="email" class="visuallyhidden">Ваш адрес электронной почты</label>
+                    <input type="email" class="contact__email" name='email' id='email' required placeholder="Ваш email">
+                    <label for="subject" class="visuallyhidden">Тема письма</label>
+                    <input type="text" class="contact__subject" name='subject' id='subject' required placeholder="Тема" minlength="4" maxlength="20">
+                </div>
+                <label class="visuallyhidden" for="cat-habits">Ваше сообщение</label>
+                <textarea required class="contact__textarea" id="contact__textarea" placeholder="Введите текст сообщения здесь" minlength="20"></textarea>
+                <button class="button-red contact__button ">Отправить сообщение</button>
+            </form>
+        </div>
+
+        </div>
+        <div class="overlay js-overlay-modal"></div>
+        </section>
+
 </body>
 
 </html>

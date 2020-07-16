@@ -137,11 +137,20 @@
 .about__button-red
     margin-right: 40px
 @media screen and ( max-width: 1200px )
+    .header
+        padding-top: 20px
+
+    .header__logo
+        margin-right: 20px
+        padding-top: 5px
     .about__row
         max-width: 100%
     .about__text
         text-align: center
-        
+    .nav__link
+        font-size: 16px
+    .nav__item
+        margin-right: 5px
     .about__button-wrapper
         text-align: center
     .main-title
@@ -162,18 +171,8 @@
             bottom: 0
             right: 0
             background: url('../images/Bg. Shape.png')
- 
             background-repeat: no-repeat
             background-position:  right -100px
-
-@media screen and ( max-width: 900px )
-    .header__logo
-        margin-right: 20px
-        padding-top: 5px
-
-    .header
-        padding-top: 20px
-
     .contactus
         border: 1px solid white
         font-size: 16px
@@ -181,12 +180,22 @@
         box-shadow: 0px 23px 41px -12px #515151
         padding: 10px 53px 10px 10px
     .arrow
-        top: 12px
+        top: 10px
         right: 12px
-    .nav__link
-        font-size: 16px
-    .nav__item
-        margin-right: 5px
+
+@media screen and ( max-width: 900px )
+    .hamburger-menu
+        display: flex
+    .header__inner
+        justify-content: space-between
+    .header__logo
+        order: 2
+        margin: 0
+
+    .nav__link-contact
+        display: inline
+
+
     
     .about__row
         max-width: 100%
@@ -197,20 +206,6 @@
         line-height: 70px
     .header__inner
         padding-bottom: 200px
-@media screen and ( max-width: 678px )
-    .hamburger-menu
-        display: flex
-    .header
-        min-height: 800px        
-        
-        margin-bottom: 30px
-        &::before
-            background-position: right -189px
-    .header__inner
-        justify-content: space-between
-    .header__logo
-        order: 2
-        margin: 0
     .contactus
         order: 3
         margin-right: 15px
@@ -238,12 +233,19 @@
     .open .nav__link
         font-size: 20px
         line-height: 22px
-    .nav__link-contact
-        display: inline-block
+
     .contactus
         display: none
+    .header
+        min-height: 800px        
+        
+        margin-bottom: 30px
+        &::before
+            background-position: right -189px
+
     .header__logo
         margin-right: 50px
+
 @media screen and ( max-width: 537px )
     .header
         &::before

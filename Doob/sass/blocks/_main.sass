@@ -55,6 +55,67 @@ a
     transition: all 0.2s
     &:hover
         text-decoration: underline
+//модальные окна
+.overlay 
+    
+    /* Скрываем подложку  */
+    opacity: 0
+    visibility: hidden
+    
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, .5)
+    z-index: 20
+    transition: .3s all
+.modal
+    opacity: 0
+    visibility: hidden
+    z-index: 30
+    position: fixed
+    min-width: 320px
+    width: 700px
+
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%) 
+    background-color: white
+    padding: 40px
+.modal.active,.overlay.active
+    opacity: 1
+    visibility: visible
+
+
+.close-btn 
+    position: absolute
+    right: 27px
+    top: 15px
+    width: 50px
+    height: 50px
+    opacity: 0.7
+    background: inherit
+    border: none
+    outline: none
+    padding: 10px
+    &:hover 
+        opacity: 1
+    &:before, &:after 
+        position: absolute
+        left: 24px
+        top: 9px
+        content: ' '
+        height: 33px
+        width: 2px
+        background-color: #ff3946
+    &:before 
+        transform: rotate(45deg)
+    &:after 
+        transform: rotate(-45deg)
+    
+.contact__modal
+    
 .section-subtitle
     font-size: 18px
     line-height: 20px
@@ -71,7 +132,9 @@ a
 @media screen and ( max-width: 1000px )
     .portfolio__section
         margin-top: 0
-    
+    .container__modal
+        max-width: 90%
+        
 @media screen and ( max-width: 678px )
     .section-title 
         font-size: 37px 
@@ -79,6 +142,9 @@ a
     .portfolio__section
         margin-bottom: 75px
         margin-top: 75px
+    .news__section
+        margin-bottom: 60px
+
+@media screen and ( max-width: 500px )
     .ourcompany__section
         margin-bottom: 75px
-        
